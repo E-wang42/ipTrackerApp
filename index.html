@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
+    <script defer src="app.js"></script>
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="topSection">
+        <h1 class="title">IP Address Tracker</h1>
+        <form class="searchForm">
+          <input
+            class="inputField"
+            placeholder="Search for any IP address or domain"
+            type="text"
+            required
+          />
+          <button class="submitBtn" type="submit">
+            <img src="images/icon-arrow.svg" alt="button" />
+          </button>
+        </form>
+      </div>
+      <section class="data">
+        <ul>
+          <li class="dataList">
+            <p class="dataListTitle">IP Address</p>
+            <h2 class="ipAddress">placeholder</h2>
+          </li>
+          <li class="dataList">
+            <p class="dataListTitle">Location</p>
+            <h2 class="location">placeholder</h2>
+          </li>
+          <li class="dataList">
+            <p class="dataListTitle">TimeZone</p>
+            <h2 class="timeZone">placeholder</h2>
+          </li>
+          <li class="">
+            <p class="dataListTitle">ISP</p>
+            <h2 class="isp">placeholder</h2>
+          </li>
+        </ul>
+      </section>
+      <!-- insert map -->
+      <section class="mapContainer">
+        <div id="map" class="section_map-div"></div>
+      </section>
+    </main>
+  </body>
+</html>

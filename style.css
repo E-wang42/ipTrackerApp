@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.topSection {
+  background-image: url("images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 2rem;
+  color: white;
+}
+
+.inputField {
+  width: 30rem;
+  height: 3.5rem;
+  border-radius: 1rem 0 0 1rem;
+  border-color: white;
+  font-size: 1.4rem;
+  caret-color: red;
+  text-indent: 10%;
+}
+
+.inputField::placeholder {
+  font-size: 1.1rem;
+}
+
+.inputField::selection {
+  background-color: hotpink;
+  color: cyan;
+  font-weight: bold;
+}
+
+.submitBtn {
+  width: 3.5rem;
+  height: 3.6rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 0 1rem 1rem 0;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: rgb(63, 63, 63);
+  border-color: rgba(63, 63, 63, 0.555);
+}
+
+form {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data {
+  position: relative;
+  padding: 1rem;
+  margin: -5rem auto;
+  max-width: 75%;
+  height: 10rem;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+  z-index: 1000;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.2rem;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+li {
+  text-align: center;
+}
+
+.dataList {
+  border-right: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dataListTitle {
+  padding-bottom: 1rem;
+}
+
+#map {
+  width: 100vw;
+  height: 78vh;
+  z-index: 0;
+}
+
+@media (max-width: 600px) {
+  .topSection {
+    height: 20rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+  }
+  .inputField {
+    max-width: 22rem;
+    font-size: 1rem;
+  }
+  .inputField::placeholder {
+    font-size: 1rem;
+  }
+  .data {
+    margin: -11rem auto;
+    max-width: 75%;
+    height: 22rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: none;
+    padding-top: 0.4rem;
+  }
+  .dataList {
+    border: none;
+  }
+  h2 {
+    margin-top: -0.5rem;
+  }
+}
