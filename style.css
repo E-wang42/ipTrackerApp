@@ -219,7 +219,6 @@ h2 {
 }
 
 #map {
-  width: 100vw;
   height: 78vh;
   z-index: 0;
 }

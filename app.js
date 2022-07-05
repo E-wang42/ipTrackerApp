@@ -24,7 +24,7 @@ const customMarker = L.icon({
   iconSize: [40, 50],
 });
 
-//Helper function
+//Helper functions
 const helper = function () {
   mapContainer.innerHTML = "";
   if (L.DomUtil.get("map") == undefined) {
@@ -56,11 +56,6 @@ const getIPData = async () => {
 
     //Leaflet Map
     const map = L.map("map").setView(coords, 5);
-
-    // L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
-    //   maxZoom: 20,
-    //   attribution: "© OpenStreetMap",
-    // }).addTo(map);
 
     const basemaps = {
       StreetView: L.tileLayer(
@@ -104,7 +99,7 @@ const getIPData = async () => {
   }
 };
 
-// Events;
+//Events;
 document.addEventListener("load", getIPData());
 
 submitBtn.addEventListener("click", (e) => {
