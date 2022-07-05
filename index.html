@@ -42,8 +42,41 @@
     <main>
       <div class="topSection">
         <h1 class="title">IP Address Tracker</h1>
+        <button class="modalButton">Sample IP Addresses</button>
+        <div class="modal hidden">
+          <button class="modalClose">&times;</button>
+          <h4 class="modalTitle">Select Any IP Address to Track!</h4>
+          <div class="modal_items-container">
+            <figure>
+              <h5>130.133.0.52</h5>
+              <p>Berlin, Germany</p>
+            </figure>
+            <figure>
+              <h5>216.53.135.0</h5>
+              <p>Disney World</p>
+            </figure>
+            <figure>
+              <h5>202.144.196.255</h5>
+              <p>Hong Kong</p>
+            </figure>
+            <figure>
+              <h5>101.187.215.83</h5>
+              <p>Sydney, Australia</p>
+            </figure>
+            <figure>
+              <h5>202.126.64.33</h5>
+              <p>Taiwan (TSMC)</p>
+            </figure>
+            <figure>
+              <h5>8.8.8.8</h5>
+              <p>Google</p>
+            </figure>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
         <form class="searchForm">
           <input
+            id="textField"
             class="inputField"
             placeholder="Search for any IP address or domain"
             type="text"
