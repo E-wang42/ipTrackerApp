@@ -1,1 +1,1 @@
-![👉 https://ip-tracker-phi-eight.vercel.app/](/images/readmeimg.jpg)
+![👉 https://ip-tracker-phi-eight.vercel.app/](images/readmeimg.jpg)
